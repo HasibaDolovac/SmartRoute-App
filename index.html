@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartRoute App</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div id="sidebar">
+    <div id="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">Smart<strong>Route</strong></span>
+    </div>
+
+  
+    <div class="panel">
+      <label class="panel-label">PRETRAGA LOKACIJE</label>
+      <div class="search-row">
+        <input type="text" id="searchInput" placeholder="Upiši grad, ulicu..."/>
+        <button id="searchBtn" onclick="searchLocation()">-></button>
+      </div>
+      <ul id="searchResults"></ul>
+    </div>
+
+    
+   
+
+  
+    <div class="panel" id="routeInfo" style="display:none">
+      <label class="panel-label">INFO RUTE</label>
+      <div class="info-grid">
+        <div class="info-box">
+          <span class="info-val" id="routeDistance">—</span>
+          <span class="info-key">Distanca</span>
+        </div>
+        <div class="info-box">
+          <span class="info-val" id="routeTime">—</span>
+          <span class="info-key">Vreme</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="panel" id="weatherPanel" style="display:none">
+      <label class="panel-label">PROGNOZA ZA DESTINACIJU</label>
+      <div id="weatherContent" class="weather-box"></div>
+    </div>
+
+  
+    <div class="panel">
+      <label class="panel-label">TAČKE NA RUTI</label>
+      <ul id="pointList"><li class="empty-hint">Klikni na mapu da dodaš tačku</li></ul>
+    </div>
+
+    
+    <div class="actions">
+      <button class="btn-primary"   onclick="buildRoute()"> Izgradi rutu</button>
+      <button class="btn-secondary" onclick="fetchWeather()"> Prognoza za destinaciju</button>
+      <button class="btn-secondary" onclick="locateMe()"> Moja lokacija</button>
+      <button class="btn-save"      onclick="saveRoute()"> Sačuvaj rutu</button>
+      <button class="btn-danger"    onclick="resetMap()"> Resetuj mapu</button>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

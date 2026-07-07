@@ -219,4 +219,4 @@ document.getElementById('searchInput').addEventListener('keydown', e => {
   if (e.key === 'Enter') searchLocation();
 });
 
- // osnovni layout
+ // funkcionalnost omiljene rute

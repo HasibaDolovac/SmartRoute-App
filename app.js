@@ -219,4 +219,4 @@ document.getElementById('searchInput').addEventListener('keydown', e => {
   if (e.key === 'Enter') searchLocation();
 });
 
-//geocoding pretrage lokacija
+//pretraga lokacije

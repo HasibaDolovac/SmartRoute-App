@@ -220,4 +220,4 @@ document.getElementById('searchInput').addEventListener('keydown', e => {
 });
 
 //registracija i prijava korisnika
-//admin panel pregled korisnika i ruta 
+// stilizovanje i responsive dizajn 

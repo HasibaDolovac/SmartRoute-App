@@ -219,4 +219,4 @@ document.getElementById('searchInput').addEventListener('keydown', e => {
   if (e.key === 'Enter') searchLocation();
 });
 
- // iscrtavanje rute preko OpenRouteService API-ja
+//cuvanje rute u bazi podataka

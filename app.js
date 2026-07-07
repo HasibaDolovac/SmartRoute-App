@@ -219,5 +219,4 @@ document.getElementById('searchInput').addEventListener('keydown', e => {
   if (e.key === 'Enter') searchLocation();
 });
 
-//registracija i prijava korisnika
-// stilizovanje i responsive dizajn 
+ // konfiguracija razvojenog okruzenja i .env fajla 

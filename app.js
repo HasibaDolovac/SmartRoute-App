@@ -218,3 +218,5 @@ function searchLocation() {
 document.getElementById('searchInput').addEventListener('keydown', e => {
   if (e.key === 'Enter') searchLocation();
 });
+
+//registracija i prijava korisnika

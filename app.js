@@ -220,4 +220,4 @@ document.getElementById('searchInput').addEventListener('keydown', e => {
 });
 
 //registracija i prijava korisnika
-//podesavanja baze
+//osnovni layout i navigacija

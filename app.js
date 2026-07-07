@@ -219,4 +219,4 @@ document.getElementById('searchInput').addEventListener('keydown', e => {
   if (e.key === 'Enter') searchLocation();
 });
 
-//TESTIRANJE FUNKCIONALNOSTI
+//priprema za deployment .env podesavanja
